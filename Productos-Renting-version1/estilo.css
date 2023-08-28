@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3%;
+    margin: 0% 3% 3% 3%;
+    min-height: 50vh;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.flexImagen {
+    width: 47%;
+    height: 100%;
+}
+
+#imgLaptop {
+    padding: 1%;
+    margin: 1%;
+    width: 94%;
+    height: 94%;
+}
+
+.flexInformacion {
+    width: 53%;
+    font-size: 20px; 
+    overflow: hidden;
+    padding-top: 5%;
+    height: auto;
+}
+
+#titulo {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px; 
+    margin-bottom: 18px;
+    font-weight: bolder;
+}
+
+#serie, #marca {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    margin-left: 5px;
+} 
+
+#informacion {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 50px;
+    margin-bottom: 35px;
+    color: rgba(110, 109, 104, 0.434);
+    font-size: 20px;
+}
+
+button {
+    background-color: white;
+    border: none;
+}
+
+#btContacto:hover {
+    transform: scale(1.1);
+}
+
+#imgContacto {
+    margin-left: 15px;
+    height: 70px;
+    width: 250px;
+}
+
+#btCopiar:hover {
+    transform: scale(1.3);
+}
+
+#imgCopiar {
+    height: 15px;
+    width: 15px;
+    margin-left: 5px;
+}
+
+
+.flexFormulario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#formulario {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 15px;
+}
+
+#btCerrar {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #4babe2;
+    margin-bottom: 15px;
+}
+
+#btCerrar:hover {
+    transform: scale(1.1);
+}
+
+#modal {
+    margin: auto;
+    padding: auto;
+    width: 75%;
+    position: fixed;
+    background: rgba(0,0,0,0.7);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+#modal.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+#modal::backdrop {
+    background-color: rgba(0,0,0,0.3);
+}
+
+
+
+#ticketFormulario {
+    margin: auto;
+    padding: auto;
+    width: 100%;
+    height: 450px;
+}

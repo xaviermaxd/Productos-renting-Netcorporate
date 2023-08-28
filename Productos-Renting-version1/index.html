@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="flex-container">
+        <!– imagen de laptop–> 
+        <div class="flexImagen">
+            <img src="laptop.jpg" id="imgLaptop">
+        </div>
+
+
+        <!– Informacion de la Laptop –> 
+        <div class="flexInformacion">
+            
+            <h2 id="titulo">Bienvenido al Centro de Asistencia NET</h2>
+            <p id="serie">Serie: 
+                <a id="copiar">PC0C69ZF</a> 
+                <button id="btCopiar" onclick="copiarSerie();">
+                    <img src="copy.jpg" id="imgCopiar">
+                </button>
+            </p>
+            <p id="marca">Marca: Lenovo</p>
+            <p id="informacion">
+                Para poder ser atendido por favor copiar el 
+                número de serie donde corresponda, su 
+                solicitud será atendida en función a los SLAs
+            </p>
+            <button id="btContacto" onclick="mostrar();">
+                    <img src="boton.jpg" id="imgContacto">
+            </button>
+
+        </div>
+    </div>
+
+
+        <!– Formulario de Ticket –>
+        <dialog id="modal">
+            <div class="flexFormulario">
+                <div id="formulario">
+                    <iframe id="ticketFormulario" src="https://www.netcorporate.net/helpdesk/renting-support-2"></iframe>
+                </div>
+                <div>
+                    <button onclick="ocultar();" id="btCerrar">Cerrar Formulario</button>
+                </div>        
+            </div>
+        </dialog> 
+    
+
+
+    <script src="main.js"></script>
+</body>
+</html>
